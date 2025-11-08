@@ -31,12 +31,214 @@
 		</div>
 	</nav>
 
-	<!-- Чат с исполнителем -->
 	<div class="main-content">
 		<div class="page active">
 			<div class="container">
 				<div class="executor-chat-layout">
-					<!-- Содержимое чата с исполнителем остается без изменений -->
+					<!-- Список чатов -->
+					<div class="chat-sidebar">
+						<div class="sidebar-header">
+							<h3>Мои проекты</h3>
+							<button class="new-chat-btn">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+						<div class="chat-list">
+							<div class="chat-item active">
+								<div class="chat-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div class="chat-info">
+									<div class="chat-name">Алексей, специалист по безопасности</div>
+									<div class="chat-preview">Предварительный отчет будет готов к пятнице</div>
+									<div class="chat-time">10:30</div>
+								</div>
+							</div>
+							<div class="chat-item">
+								<div class="chat-avatar">
+									<i class="fas fa-user-shield"></i>
+								</div>
+								<div class="chat-info">
+									<div class="chat-name">Мария, аналитик кода</div>
+									<div class="chat-preview">Обнаружили несколько уязвимостей в модуле...</div>
+									<div class="chat-time">Вчера</div>
+								</div>
+							</div>
+							<div class="chat-item">
+								<div class="chat-avatar">
+									<i class="fas fa-network-wired"></i>
+								</div>
+								<div class="chat-info">
+									<div class="chat-name">Дмитрий, пентестер</div>
+									<div class="chat-preview">Начинаем тестирование внешней инфраструктуры</div>
+									<div class="chat-time">15 янв</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Основной чат -->
+					<div class="executor-chat-container">
+						<div class="executor-chat-header">
+							<div class="executor-info">
+								<div class="executor-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div>
+									<div class="executor-name">Алексей, специалист по безопасности</div>
+									<div class="executor-status">
+										<span class="status-dot online"></span>
+										В сети
+									</div>
+								</div>
+							</div>
+							<div class="executor-actions">
+								<button class="action-btn" title="Информация о проекте">
+									<i class="fas fa-info-circle"></i>
+								</button>
+								<button class="action-btn" title="Прикрепить файл">
+									<i class="fas fa-paperclip"></i>
+								</button>
+								<button class="action-btn" title="Настройки чата">
+									<i class="fas fa-cog"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="executor-chat-messages">
+							<div class="message-date">Сегодня</div>
+
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Алексей</div>
+									<div class="message-text">Добрый день! Я ваш исполнитель по проекту "Анализ кода на
+										уязвимости". Готов ответить на ваши вопросы.</div>
+									<div class="message-time">10:00</div>
+								</div>
+							</div>
+
+							<div class="message user">
+								<div class="message-content">
+									<div class="message-text">Здравствуйте! Когда будет готов предварительный отчет?
+									</div>
+									<div class="message-time">10:05</div>
+								</div>
+							</div>
+
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Алексей</div>
+									<div class="message-text">Предварительный отчет будет готов к пятнице. Сейчас
+										завершаю проверку модуля аутентификации.</div>
+									<div class="message-time">10:06</div>
+								</div>
+							</div>
+
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Алексей</div>
+									<div class="message-text">Пока что обнаружил несколько minor issues, но ничего
+										критичного. Детали будут в отчете.</div>
+									<div class="message-time">10:07</div>
+								</div>
+							</div>
+
+							<div class="message user">
+								<div class="message-content">
+									<div class="message-text">Хорошо, жду отчет. Нужно ли предоставить дополнительную
+										информацию?</div>
+									<div class="message-time">10:10</div>
+								</div>
+							</div>
+
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Алексей</div>
+									<div class="message-text">Пока всё есть. Если понадобится что-то дополнительно, я
+										свяжусь с вами.</div>
+									<div class="message-time">10:11</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="executor-chat-input">
+							<div class="chat-tools">
+								<button class="tool-btn">
+									<i class="fas fa-paperclip"></i>
+								</button>
+								<button class="tool-btn">
+									<i class="fas fa-code"></i>
+								</button>
+								<button class="tool-btn">
+									<i class="fas fa-image"></i>
+								</button>
+							</div>
+							<input type="text" class="chat-input" placeholder="Введите ваше сообщение...">
+							<button class="send-button">
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- Информация о проекте -->
+					<div class="project-sidebar">
+						<div class="project-info">
+							<h4>Информация о проекте</h4>
+							<div class="project-details">
+								<div class="detail-item">
+									<strong>Проект:</strong>
+									<span>Анализ кода на уязвимости</span>
+								</div>
+								<div class="detail-item">
+									<strong>Статус:</strong>
+									<span class="status in-progress">В работе</span>
+								</div>
+								<div class="detail-item">
+									<strong>Срок сдачи:</strong>
+									<span>19 января 2024</span>
+								</div>
+								<div class="detail-item">
+									<strong>Прогресс:</strong>
+									<div class="progress-bar">
+										<div class="progress-fill" style="width: 65%"></div>
+									</div>
+									<span>65%</span>
+								</div>
+							</div>
+
+							<div class="project-files">
+								<h5>Прикрепленные файлы</h5>
+								<div class="file-list">
+									<div class="file-item">
+										<i class="fas fa-file-pdf"></i>
+										<div class="file-info">
+											<div class="file-name">ТЗ_проекта.pdf</div>
+											<div class="file-size">2.4 MB</div>
+										</div>
+									</div>
+									<div class="file-item">
+										<i class="fas fa-file-code"></i>
+										<div class="file-info">
+											<div class="file-name">access_control.py</div>
+											<div class="file-size">156 KB</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -31,12 +31,14 @@
 		</div>
 	</nav>
 
-	<!-- Страница техподдержки -->
 	<div class="main-content">
 		<div class="page active">
 			<div class="container">
-				<h1 class="page-header">Техническая поддержка</h1>
-				<p class="page-subtitle">Мы всегда готовы помочь вам с любыми вопросами</p>
+				<!-- Исправленный заголовок -->
+				<div class="support-header">
+					<h1 class="page-header">Техническая поддержка</h1>
+					<p class="page-subtitle">Мы всегда готовы помочь вам с любыми вопросами</p>
+				</div>
 
 				<div class="support-options">
 					<div class="support-card">
@@ -68,17 +70,124 @@
 				</div>
 
 				<div class="support-content">
-					<!-- Контейнеры чата, email и телефона остаются без изменений -->
 					<div class="chat-container active" id="chat-tab">
-						<!-- Содержимое чата... -->
+						<div class="chat-header">
+							<div class="chat-info">
+								<h3>Чат с поддержкой</h3>
+								<div class="chat-status">
+									<span class="status-dot online"></span>
+									Сейчас онлайн
+								</div>
+							</div>
+							<div class="chat-actions">
+								<button class="chat-action-btn">
+									<i class="fas fa-phone"></i>
+								</button>
+								<button class="chat-action-btn">
+									<i class="fas fa-video"></i>
+								</button>
+								<button class="chat-action-btn">
+									<i class="fas fa-ellipsis-v"></i>
+								</button>
+							</div>
+						</div>
+						<div class="chat-messages">
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-headset"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Поддержка SoSI</div>
+									<div class="message-text">Здравствуйте! Чем мы можем вам помочь?</div>
+									<div class="message-time">10:00</div>
+								</div>
+							</div>
+							<div class="message user">
+								<div class="message-content">
+									<div class="message-text">У меня вопрос по поводу отчета о пентесте</div>
+									<div class="message-time">10:02</div>
+								</div>
+							</div>
+							<div class="message support">
+								<div class="message-avatar">
+									<i class="fas fa-headset"></i>
+								</div>
+								<div class="message-content">
+									<div class="message-sender">Поддержка SoSI</div>
+									<div class="message-text">Конечно, я помогу вам. Что именно вас интересует?</div>
+									<div class="message-time">10:03</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-input-container">
+							<div class="chat-input-actions">
+								<button class="input-action">
+									<i class="fas fa-paperclip"></i>
+								</button>
+								<button class="input-action">
+									<i class="fas fa-smile"></i>
+								</button>
+							</div>
+							<input type="text" class="chat-input" placeholder="Введите ваше сообщение...">
+							<button class="send-button">
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</div>
 					</div>
 
 					<div class="email-container" id="email-tab">
-						<!-- Содержимое email формы... -->
+						<div class="email-form">
+							<h3>Отправьте нам сообщение</h3>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="email-name">Ваше имя</label>
+									<input type="text" id="email-name" placeholder="Введите ваше имя">
+								</div>
+								<div class="form-group">
+									<label for="email-address">Email</label>
+									<input type="email" id="email-address" placeholder="Введите ваш email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email-subject">Тема</label>
+								<input type="text" id="email-subject" placeholder="Тема сообщения">
+							</div>
+							<div class="form-group">
+								<label for="email-message">Сообщение</label>
+								<textarea id="email-message" placeholder="Опишите вашу проблему..." rows="6"></textarea>
+							</div>
+							<button class="email-send-button">
+								<i class="fas fa-paper-plane"></i>
+								Отправить сообщение
+							</button>
+						</div>
 					</div>
 
 					<div class="phone-container" id="phone-tab">
-						<!-- Содержимое телефона... -->
+						<div class="phone-info">
+							<div class="phone-icon">
+								<i class="fas fa-phone-alt"></i>
+							</div>
+							<h3>Телефонная поддержка</h3>
+							<div class="phone-number">+7 (800) 555-35-35</div>
+							<div class="phone-hours">
+								<strong>Часы работы:</strong><br>
+								Пн-Пт: 9:00 - 18:00<br>
+								Сб-Вс: 10:00 - 16:00
+							</div>
+							<div class="phone-notes">
+								<p>Для быстрой помощи подготовьте:</p>
+								<ul>
+									<li>Номер вашего заказа</li>
+									<li>Описание проблемы</li>
+									<li>Скриншоты (если есть)</li>
+								</ul>
+							</div>
+							<button class="call-button" id="callButton">
+								<i class="fas fa-phone"></i>
+								Позвонить сейчас
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
