@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги - SoSI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Услуги - SoSI</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- <style>
         /* Дополнительные стили для страницы услуг */
         .page-header {
             text-align: center;
@@ -222,239 +223,246 @@
         }
     </style>-->
 </head>
+
 <body>
-    <!-- Навигация -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>SoSI</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="services.html" class="nav-link active">Услуги</a></li>
-                <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
-                <li><a href="support.html" class="nav-link">Техподдержка</a></li>
-                <li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
-                <li><a href="login.html" class="nav-link">Вход</a></li>
-                <li><a href="register.html" class="nav-link">Регистрация</a></li>
-            </ul>
-        </div>
-    </nav>
+	<!-- Навигация -->
+	<nav>
+		<div class="nav-container">
+			<div class="logo">
+				<i class="fas fa-shield-alt"></i>
+				<span>SoSI</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html" class="nav-link">Главная</a></li>
+				<li><a href="services.html" class="nav-link active">Услуги</a></li>
+				<li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+				<li><a href="support.html" class="nav-link">Техподдержка</a></li>
+				<li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
+				<li><a href="login.html" class="nav-link">Вход</a></li>
+				<li><a href="register.html" class="nav-link">Регистрация</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <!-- Страница услуг -->
-    <div class="main-content">
-        <div class="page active">
-            <div class="container">
-                <div class="page-header">
-                    <h1>Наши услуги</h1>
-                    <p>Выберите подходящую услугу для защиты вашего IT-проекта</p>
-                </div>
+	<!-- Страница услуг -->
+	<div class="main-content">
+		<div class="page active">
+			<div class="container">
+				<div class="page-header">
+					<h1>Наши услуги</h1>
+					<p>Выберите подходящую услугу для защиты вашего IT-проекта</p>
+				</div>
 
-                <div class="services-categories">
-                    <button class="category-btn active">Все услуги</button>
-                    <button class="category-btn">Пентестинг</button>
-                    <button class="category-btn">Анализ кода</button>
-                    <button class="category-btn">Консалтинг</button>
-                </div>
-                
-                <div class="search-container">
-                    <input type="text" class="search-box" placeholder="Поиск услуг...">
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Внутренний пентест</h3>
-                            <p class="service-description">Тестирование безопасности внутренней сети организации для выявления уязвимостей, доступных атакующему внутри периметра.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Анализ внутренней инфраструктуры
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Тестирование прав доступа
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Проверка сегментации сети
-                                </div>
-                            </div>
-                            <div class="service-price">от 50 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Внешний пентест</h3>
-                            <p class="service-description">Проверка внешней инфраструктуры компании на уязвимости, которые могут быть использованы злоумышленниками извне.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Сканирование портов и сервисов
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Тестирование веб-приложений
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Анализ внешних API
-                                </div>
-                            </div>
-                            <div class="service-price">от 75 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Анализ кода на уязвимости</h3>
-                            <p class="service-description">Статический и динамический анализ исходного кода приложений для обнаружения потенциальных уязвимостей безопасности.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Статический анализ (SAST)
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Динамический анализ (DAST)
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Проверка зависимостей
-                                </div>
-                            </div>
-                            <div class="service-price">от 35 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Исправление уязвимостей</h3>
-                            <p class="service-description">Устранение обнаруженных уязвимостей в исходном коде и конфигурациях систем для повышения уровня безопасности.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Патчинг уязвимостей
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Конфигурирование систем
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Ретестинг после исправлений
-                                </div>
-                            </div>
-                            <div class="service-price">от 25 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
+				<div class="services-categories">
+					<button class="category-btn active">Все услуги</button>
+					<button class="category-btn">Пентестинг</button>
+					<button class="category-btn">Анализ кода</button>
+					<button class="category-btn">Консалтинг</button>
+				</div>
 
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Тестирование мобильных приложений</h3>
-                            <p class="service-description">Комплексная проверка безопасности мобильных приложений для iOS и Android на наличие уязвимостей.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Анализ бинарных файлов
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Тестирование API бэкенда
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Проверка хранения данных
-                                </div>
-                            </div>
-                            <div class="service-price">от 45 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
+				<div class="search-container">
+					<input type="text" class="search-box" placeholder="Поиск услуг...">
+				</div>
 
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Аудит облачной инфраструктуры</h3>
-                            <p class="service-description">Проверка безопасности облачных решений (AWS, Azure, GCP) на соответствие best practices.</p>
-                            <div class="service-features">
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Анализ конфигураций
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Проверка прав доступа IAM
-                                </div>
-                                <div class="service-feature">
-                                    <i class="fas fa-check"></i>
-                                    Аудит сетевой безопасности
-                                </div>
-                            </div>
-                            <div class="service-price">от 60 000 ₽</div>
-                            <button class="service-button">Выбрать услугу</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="load-more">
-                    <i class="fas fa-plus"></i>
-                    Загрузить больше услуг
-                </button>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-network-wired"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Внутренний пентест</h3>
+							<p class="service-description">Тестирование безопасности внутренней сети организации для
+								выявления уязвимостей, доступных атакующему внутри периметра.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Анализ внутренней инфраструктуры
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Тестирование прав доступа
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Проверка сегментации сети
+								</div>
+							</div>
+							<div class="service-price">от 50 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
 
-                <div class="services-info">
-                    <h3>Почему выбирают наши услуги?</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-certificate"></i>
-                            <h4>Сертифицированные специалисты</h4>
-                            <p>Наша команда имеет международные сертификаты в области кибербезопасности</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <h4>Быстрый старт</h4>
-                            <p>Начинаем работу в течение 24 часов после подтверждения заказа</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <h4>Конфиденциальность</h4>
-                            <p>Гарантируем полную конфиденциальность ваших данных и результатов</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-headset"></i>
-                            <h4>Поддержка 24/7</h4>
-                            <p>Круглосуточная техническая поддержка на всех этапах сотрудничества</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-globe"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Внешний пентест</h3>
+							<p class="service-description">Проверка внешней инфраструктуры компании на уязвимости,
+								которые могут быть использованы злоумышленниками извне.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Сканирование портов и сервисов
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Тестирование веб-приложений
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Анализ внешних API
+								</div>
+							</div>
+							<div class="service-price">от 75 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
 
-<!--   <script>
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-code"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Анализ кода на уязвимости</h3>
+							<p class="service-description">Статический и динамический анализ исходного кода приложений
+								для обнаружения потенциальных уязвимостей безопасности.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Статический анализ (SAST)
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Динамический анализ (DAST)
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Проверка зависимостей
+								</div>
+							</div>
+							<div class="service-price">от 35 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-tools"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Исправление уязвимостей</h3>
+							<p class="service-description">Устранение обнаруженных уязвимостей в исходном коде и
+								конфигурациях систем для повышения уровня безопасности.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Патчинг уязвимостей
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Конфигурирование систем
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Ретестинг после исправлений
+								</div>
+							</div>
+							<div class="service-price">от 25 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-mobile-alt"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Тестирование мобильных приложений</h3>
+							<p class="service-description">Комплексная проверка безопасности мобильных приложений для
+								iOS и Android на наличие уязвимостей.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Анализ бинарных файлов
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Тестирование API бэкенда
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Проверка хранения данных
+								</div>
+							</div>
+							<div class="service-price">от 45 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-cloud"></i>
+						</div>
+						<div class="service-content">
+							<h3 class="service-title">Аудит облачной инфраструктуры</h3>
+							<p class="service-description">Проверка безопасности облачных решений (AWS, Azure, GCP) на
+								соответствие best practices.</p>
+							<div class="service-features">
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Анализ конфигураций
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Проверка прав доступа IAM
+								</div>
+								<div class="service-feature">
+									<i class="fas fa-check"></i>
+									Аудит сетевой безопасности
+								</div>
+							</div>
+							<div class="service-price">от 60 000 ₽</div>
+							<button class="service-button">Выбрать услугу</button>
+						</div>
+					</div>
+				</div>
+
+				<button class="load-more">
+					<i class="fas fa-plus"></i>
+					Загрузить больше услуг
+				</button>
+
+				<div class="services-info">
+					<h3>Почему выбирают наши услуги?</h3>
+					<div class="info-grid">
+						<div class="info-item">
+							<i class="fas fa-certificate"></i>
+							<h4>Сертифицированные специалисты</h4>
+							<p>Наша команда имеет международные сертификаты в области кибербезопасности</p>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-clock"></i>
+							<h4>Быстрый старт</h4>
+							<p>Начинаем работу в течение 24 часов после подтверждения заказа</p>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-shield-alt"></i>
+							<h4>Конфиденциальность</h4>
+							<p>Гарантируем полную конфиденциальность ваших данных и результатов</p>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-headset"></i>
+							<h4>Поддержка 24/7</h4>
+							<p>Круглосуточная техническая поддержка на всех этапах сотрудничества</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--   <script>
         // Обработка кнопки "Загрузить больше"
         document.querySelector('.load-more').addEventListener('click', function() {
             alert('Функция "Загрузить больше" в настоящее время не доступна. Это заглушка для демонстрации.');
@@ -488,7 +496,7 @@
             }
         });
     </script>-->
-<script src="script.js"></script>  
+	<script src="script.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,212 +1,214 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оплата услуги - SoSI</title>
-    <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оплата услуги - SoSI</title>
+	<link rel="stylesheet" href="payment.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="payment-container">
-        <!-- Заголовок -->
-        <div class="payment-header">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>SoSI</span>
-            </div>
-            <h1>Оплата услуги</h1>
-        </div>
+	<div class="payment-container">
+		<!-- Заголовок -->
+		<div class="payment-header">
+			<div class="logo">
+				<i class="fas fa-shield-alt"></i>
+				<span>SoSI</span>
+			</div>
+			<h1>Оплата услуги</h1>
+		</div>
 
-        <!-- Информация о заказе -->
-        <div class="order-summary">
-            <h2>Детали заказа</h2>
-            <div class="order-info">
-                <div class="service-details">
-                    <div class="service-name" id="serviceName">Внешний пентест</div>
-                    <div class="service-description">Проверка внешней инфраструктуры компании на уязвимости</div>
-                </div>
-                <div class="price-section">
-                    <div class="price-label">Стоимость:</div>
-                    <div class="price-amount" id="priceAmount">75 000 ₽</div>
-                </div>
-            </div>
-        </div>
+		<!-- Информация о заказе -->
+		<div class="order-summary">
+			<h2>Детали заказа</h2>
+			<div class="order-info">
+				<div class="service-details">
+					<div class="service-name" id="serviceName">Внешний пентест</div>
+					<div class="service-description">Проверка внешней инфраструктуры компании на уязвимости</div>
+				</div>
+				<div class="price-section">
+					<div class="price-label">Стоимость:</div>
+					<div class="price-amount" id="priceAmount">75 000 ₽</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Выбор способа оплаты -->
-        <div class="payment-methods">
-            <h2>Выберите способ оплаты</h2>
-            <div class="methods-grid">
-                <div class="method-card" data-method="card">
-                    <div class="method-icon">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                    <div class="method-info">
-                        <div class="method-name">Банковская карта</div>
-                        <div class="method-description">Visa, MasterCard, МИР</div>
-                    </div>
-                    <div class="method-check">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+		<!-- Выбор способа оплаты -->
+		<div class="payment-methods">
+			<h2>Выберите способ оплаты</h2>
+			<div class="methods-grid">
+				<div class="method-card" data-method="card">
+					<div class="method-icon">
+						<i class="fas fa-credit-card"></i>
+					</div>
+					<div class="method-info">
+						<div class="method-name">Банковская карта</div>
+						<div class="method-description">Visa, MasterCard, МИР</div>
+					</div>
+					<div class="method-check">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
 
-                <div class="method-card" data-method="sbp">
-                    <div class="method-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="method-info">
-                        <div class="method-name">СБП (Система быстрых платежей)</div>
-                        <div class="method-description">Оплата через мобильный банк</div>
-                    </div>
-                    <div class="method-check">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+				<div class="method-card" data-method="sbp">
+					<div class="method-icon">
+						<i class="fas fa-mobile-alt"></i>
+					</div>
+					<div class="method-info">
+						<div class="method-name">СБП (Система быстрых платежей)</div>
+						<div class="method-description">Оплата через мобильный банк</div>
+					</div>
+					<div class="method-check">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
 
-                <div class="method-card" data-method="yoomoney">
-                    <div class="method-icon">
-                        <i class="fas fa-wallet"></i>
-                    </div>
-                    <div class="method-info">
-                        <div class="method-name">ЮMoney</div>
-                        <div class="method-description">Быстрая оплата через кошелек</div>
-                    </div>
-                    <div class="method-check">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
+				<div class="method-card" data-method="yoomoney">
+					<div class="method-icon">
+						<i class="fas fa-wallet"></i>
+					</div>
+					<div class="method-info">
+						<div class="method-name">ЮMoney</div>
+						<div class="method-description">Быстрая оплата через кошелек</div>
+					</div>
+					<div class="method-check">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
 
-                <div class="method-card" data-method="bank">
-                    <div class="method-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="method-info">
-                        <div class="method-name">Банковский перевод</div>
-                        <div class="method-description">Оплата по счету для юр. лиц</div>
-                    </div>
-                    <div class="method-check">
-                        <i class="fas fa-check"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+				<div class="method-card" data-method="bank">
+					<div class="method-icon">
+						<i class="fas fa-university"></i>
+					</div>
+					<div class="method-info">
+						<div class="method-name">Банковский перевод</div>
+						<div class="method-description">Оплата по счету для юр. лиц</div>
+					</div>
+					<div class="method-check">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Форма оплаты картой -->
-        <div class="payment-form active" id="cardForm">
-            <h3>Данные банковской карты</h3>
-            <form id="paymentForm">
-                <div class="form-group">
-                    <label for="cardNumber">Номер карты</label>
-                    <div class="input-with-icon">
-                        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
-                        <i class="fas fa-credit-card"></i>
-                    </div>
-                </div>
+		<!-- Форма оплаты картой -->
+		<div class="payment-form active" id="cardForm">
+			<h3>Данные банковской карты</h3>
+			<form id="paymentForm">
+				<div class="form-group">
+					<label for="cardNumber">Номер карты</label>
+					<div class="input-with-icon">
+						<input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+						<i class="fas fa-credit-card"></i>
+					</div>
+				</div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="cardExpiry">Срок действия</label>
-                        <input type="text" id="cardExpiry" placeholder="ММ/ГГ" maxlength="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="cardCvc">CVC/CVV</label>
-                        <div class="input-with-icon">
-                            <input type="text" id="cardCvc" placeholder="000" maxlength="3">
-                            <i class="fas fa-question-circle" title="3 цифры на обратной стороне карты"></i>
-                        </div>
-                    </div>
-                </div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="cardExpiry">Срок действия</label>
+						<input type="text" id="cardExpiry" placeholder="ММ/ГГ" maxlength="5">
+					</div>
+					<div class="form-group">
+						<label for="cardCvc">CVC/CVV</label>
+						<div class="input-with-icon">
+							<input type="text" id="cardCvc" placeholder="000" maxlength="3">
+							<i class="fas fa-question-circle" title="3 цифры на обратной стороне карты"></i>
+						</div>
+					</div>
+				</div>
 
-                <div class="form-group">
-                    <label for="cardHolder">Имя владельца карты</label>
-                    <input type="text" id="cardHolder" placeholder="IVAN IVANOV">
-                </div>
+				<div class="form-group">
+					<label for="cardHolder">Имя владельца карты</label>
+					<input type="text" id="cardHolder" placeholder="IVAN IVANOV">
+				</div>
 
-                <div class="form-group">
-                    <label for="email">Email для чека</label>
-                    <input type="email" id="email" placeholder="your@email.com">
-                </div>
+				<div class="form-group">
+					<label for="email">Email для чека</label>
+					<input type="email" id="email" placeholder="your@email.com">
+				</div>
 
-                <div class="security-notice">
-                    <i class="fas fa-lock"></i>
-                    <span>Все данные защищены и передаются в зашифрованном виде</span>
-                </div>
-            </form>
-        </div>
+				<div class="security-notice">
+					<i class="fas fa-lock"></i>
+					<span>Все данные защищены и передаются в зашифрованном виде</span>
+				</div>
+			</form>
+		</div>
 
-        <!-- Форма СБП -->
-        <div class="payment-form" id="sbpForm">
-            <h3>Оплата через СБП</h3>
-            <div class="sbp-info">
-                <div class="sbp-qr">
-                    <div class="qr-placeholder">
-                        <i class="fas fa-qrcode"></i>
-                        <p>QR-код для оплаты</p>
-                    </div>
-                </div>
-                <div class="sbp-instructions">
-                    <h4>Как оплатить:</h4>
-                    <ol>
-                        <li>Откройте приложение вашего банка</li>
-                        <li>Выберите раздел "СБП" или "Быстрый платеж"</li>
-                        <li>Отсканируйте QR-код или введите номер телефона</li>
-                        <li>Подтвердите платеж</li>
-                    </ol>
-                    <div class="phone-number">
-                        <strong>Номер для перевода:</strong>
-                        <span>+7 (900) 123-45-67</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Форма СБП -->
+		<div class="payment-form" id="sbpForm">
+			<h3>Оплата через СБП</h3>
+			<div class="sbp-info">
+				<div class="sbp-qr">
+					<div class="qr-placeholder">
+						<i class="fas fa-qrcode"></i>
+						<p>QR-код для оплаты</p>
+					</div>
+				</div>
+				<div class="sbp-instructions">
+					<h4>Как оплатить:</h4>
+					<ol>
+						<li>Откройте приложение вашего банка</li>
+						<li>Выберите раздел "СБП" или "Быстрый платеж"</li>
+						<li>Отсканируйте QR-код или введите номер телефона</li>
+						<li>Подтвердите платеж</li>
+					</ol>
+					<div class="phone-number">
+						<strong>Номер для перевода:</strong>
+						<span>+7 (900) 123-45-67</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Итоговая сумма и кнопка оплаты -->
-        <div class="payment-summary">
-            <div class="summary-row">
-                <span>Стоимость услуги:</span>
-                <span id="summaryPrice">75 000 ₽</span>
-            </div>
-            <div class="summary-row">
-                <span>Комиссия:</span>
-                <span>0 ₽</span>
-            </div>
-            <div class="summary-row total">
-                <span>Итого к оплате:</span>
-                <span id="totalAmount">75 000 ₽</span>
-            </div>
+		<!-- Итоговая сумма и кнопка оплаты -->
+		<div class="payment-summary">
+			<div class="summary-row">
+				<span>Стоимость услуги:</span>
+				<span id="summaryPrice">75 000 ₽</span>
+			</div>
+			<div class="summary-row">
+				<span>Комиссия:</span>
+				<span>0 ₽</span>
+			</div>
+			<div class="summary-row total">
+				<span>Итого к оплате:</span>
+				<span id="totalAmount">75 000 ₽</span>
+			</div>
 
-            <button class="pay-button" id="payButton">
-                <i class="fas fa-lock"></i>
-                Оплатить <span id="payAmount">75 000 ₽</span>
-            </button>
+			<button class="pay-button" id="payButton">
+				<i class="fas fa-lock"></i>
+				Оплатить <span id="payAmount">75 000 ₽</span>
+			</button>
 
-            <div class="payment-security">
-                <div class="security-badges">
-                    <div class="badge">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>SSL защита</span>
-                    </div>
-                    <div class="badge">
-                        <i class="fas fa-user-shield"></i>
-                        <span>PCI DSS</span>
-                    </div>
-                    <div class="badge">
-                        <i class="fas fa-check-double"></i>
-                        <span>3D Secure</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="payment-security">
+				<div class="security-badges">
+					<div class="badge">
+						<i class="fas fa-shield-alt"></i>
+						<span>SSL защита</span>
+					</div>
+					<div class="badge">
+						<i class="fas fa-user-shield"></i>
+						<span>PCI DSS</span>
+					</div>
+					<div class="badge">
+						<i class="fas fa-check-double"></i>
+						<span>3D Secure</span>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- Дополнительная информация -->
-        <div class="payment-footer">
-            <div class="support-info">
-                <h4>Нужна помощь?</h4>
-                <p>Наша служба поддержки доступна 24/7</p>
-                <div class="support-contacts">
-                    <a href="tel:+78005553535">+7 (800) 555-35-35</a>
-                    <a href="mailto:support@sosi.ru">support@sosi.ru</a>
-                </div>
-            </div>
-            <div class="guarantee-info">
-                <h4>
+		<!-- Дополнительная информация -->
+		<div class="payment-footer">
+			<div class="support-info">
+				<h4>Нужна помощь?</h4>
+				<p>Наша служба поддержки доступна 24/7</p>
+				<div class="support-contacts">
+					<a href="tel:+78005553535">+7 (800) 555-35-35</a>
+					<a href="mailto:support@sosi.ru">support@sosi.ru</a>
+				</div>
+			</div>
+			<div class="guarantee-info">
+				<h4>

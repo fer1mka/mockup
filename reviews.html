@@ -1,214 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отзывы - SoSI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Отзывы - SoSI</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Навигация -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>SoSI</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="services.html" class="nav-link">Услуги</a></li>
-                <li><a href="reviews.html" class="nav-link active">Отзывы</a></li>
-                <li><a href="support.html" class="nav-link">Техподдержка</a></li>
-                <li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
-                <li><a href="login.html" class="nav-link">Вход</a></li>
-                <li><a href="register.html" class="nav-link">Регистрация</a></li>
-            </ul>
-        </div>
-    </nav>
+	<!-- Навигация -->
+	<nav>
+		<div class="nav-container">
+			<div class="logo">
+				<i class="fas fa-shield-alt"></i>
+				<span>SoSI</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html" class="nav-link">Главная</a></li>
+				<li><a href="services.html" class="nav-link">Услуги</a></li>
+				<li><a href="reviews.html" class="nav-link active">Отзывы</a></li>
+				<li><a href="support.html" class="nav-link">Техподдержка</a></li>
+				<li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
+				<li><a href="login.html" class="nav-link">Вход</a></li>
+				<li><a href="register.html" class="nav-link">Регистрация</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <!-- Страница отзывов -->
-    <div class="main-content">
-        <div class="page active">
-            <div class="container">
-                <div class="reviews-header">
-                    <h1 class="page-header">Отзывы клиентов</h1>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">Все отзывы</button>
-                        <button class="filter-btn" data-filter="completed">Завершенные заказы</button>
-                        <button class="filter-btn" data-filter="incomplete">Незавершенные заказы</button>
-                    </div>
-                </div>
-                
-                <div class="reviews-stats">
-                    <div class="rating-overview">
-                        <div class="average-rating">
-                            <div class="rating-number">4.8</div>
-                            <div class="rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="rating-count">На основе 127 отзывов</div>
-                        </div>
-                        <div class="rating-bars">
-                            <div class="rating-bar">
-                                <span>5 звезд</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 75%"></div>
-                                </div>
-                                <span>75%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>4 звезды</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 20%"></div>
-                                </div>
-                                <span>20%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>3 звезды</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 4%"></div>
-                                </div>
-                                <span>4%</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>2 звезды</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 1%"></div>
-                                </div>
-                                <span>1%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="reviews-container">
-                    <div class="review-card" data-type="completed">
-                        <div class="review-header">
-                            <div class="review-author-info">
-                                <div class="review-avatar">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div>
-                                    <div class="review-author">Александр К.</div>
-                                    <div class="review-date">15 января 2024</div>
-                                </div>
-                            </div>
-                            <span class="review-type completed">Завершен</span>
-                        </div>
-                        <div class="review-text">
-                            Отличная работа команды SoSI! Провели комплексный пентест нашего приложения, выявили критические уязвимости и помогли их устранить. Особенно хочу отметить оперативность и профессионализм специалистов.
-                        </div>
-                        <div class="review-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="review-service">
-                            <i class="fas fa-tag"></i>
-                            Внешний пентест
-                        </div>
-                    </div>
-                    
-                    <div class="review-card" data-type="incomplete">
-                        <div class="review-header">
-                            <div class="review-author-info">
-                                <div class="review-avatar">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div>
-                                    <div class="review-author">Мария С.</div>
-                                    <div class="review-date">10 января 2024</div>
-                                </div>
-                            </div>
-                            <span class="review-type incomplete">В процессе</span>
-                        </div>
-                        <div class="review-text">
-                            Заказала анализ кода, но пока не получила окончательный отчет. Специалисты вежливые, отвечают на вопросы. Надеюсь на качественный результат.
-                        </div>
-                        <div class="review-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="review-service">
-                            <i class="fas fa-tag"></i>
-                            Анализ кода
-                        </div>
-                    </div>
-                    
-                    <div class="review-card" data-type="completed">
-                        <div class="review-header">
-                            <div class="review-author-info">
-                                <div class="review-avatar">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div>
-                                    <div class="review-author">Дмитрий П.</div>
-                                    <div class="review-date">5 января 2024</div>
-                                </div>
-                            </div>
-                            <span class="review-type completed">Завершен</span>
-                        </div>
-                        <div class="review-text">
-                            SoSI помогли нам подготовиться к аудиту безопасности. Все прошло успешно, рекомендую как надежного партнера. Отдельное спасибо за подробный отчет и рекомендации.
-                        </div>
-                        <div class="review-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="review-service">
-                            <i class="fas fa-tag"></i>
-                            Аудит безопасности
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="add-review-section">
-                    <h3>Оставить отзыв</h3>
-                    <div class="add-review">
-                        <div class="form-group">
-                            <label>Ваша оценка</label>
-                            <div class="rating-input">
-                                <i class="far fa-star" data-rating="1"></i>
-                                <i class="far fa-star" data-rating="2"></i>
-                                <i class="far fa-star" data-rating="3"></i>
-                                <i class="far fa-star" data-rating="4"></i>
-                                <i class="far fa-star" data-rating="5"></i>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="review-service">Услуга</label>
-                            <select id="review-service">
-                                <option value="">Выберите услугу</option>
-                                <option value="pentest">Внешний пентест</option>
-                                <option value="internal-pentest">Внутренний пентест</option>
-                                <option value="code-analysis">Анализ кода</option>
-                                <option value="vulnerability-fix">Исправление уязвимостей</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="review-text">Ваш отзыв</label>
-                            <textarea id="review-text" placeholder="Поделитесь вашим опытом работы с SoSI..." rows="5"></textarea>
-                        </div>
-                        <button class="auth-button">Отправить отзыв</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- Страница отзывов -->
+	<div class="main-content">
+		<div class="page active">
+			<div class="container">
+				<div class="reviews-header">
+					<h1 class="page-header">Отзывы клиентов</h1>
+					<div class="filter-buttons">
+						<button class="filter-btn active" data-filter="all">Все отзывы</button>
+						<button class="filter-btn" data-filter="completed">Завершенные заказы</button>
+						<button class="filter-btn" data-filter="incomplete">Незавершенные заказы</button>
+					</div>
+				</div>
 
-    <script src="script.js"></script>
+				<div class="reviews-stats">
+					<div class="rating-overview">
+						<div class="average-rating">
+							<div class="rating-number">4.8</div>
+							<div class="rating-stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<div class="rating-count">На основе 127 отзывов</div>
+						</div>
+						<div class="rating-bars">
+							<div class="rating-bar">
+								<span>5 звезд</span>
+								<div class="bar">
+									<div class="fill" style="width: 75%"></div>
+								</div>
+								<span>75%</span>
+							</div>
+							<div class="rating-bar">
+								<span>4 звезды</span>
+								<div class="bar">
+									<div class="fill" style="width: 20%"></div>
+								</div>
+								<span>20%</span>
+							</div>
+							<div class="rating-bar">
+								<span>3 звезды</span>
+								<div class="bar">
+									<div class="fill" style="width: 4%"></div>
+								</div>
+								<span>4%</span>
+							</div>
+							<div class="rating-bar">
+								<span>2 звезды</span>
+								<div class="bar">
+									<div class="fill" style="width: 1%"></div>
+								</div>
+								<span>1%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="reviews-container">
+					<div class="review-card" data-type="completed">
+						<div class="review-header">
+							<div class="review-author-info">
+								<div class="review-avatar">
+									<i class="fas fa-user"></i>
+								</div>
+								<div>
+									<div class="review-author">Александр К.</div>
+									<div class="review-date">15 января 2024</div>
+								</div>
+							</div>
+							<span class="review-type completed">Завершен</span>
+						</div>
+						<div class="review-text">
+							Отличная работа команды SoSI! Провели комплексный пентест нашего приложения, выявили
+							критические уязвимости и помогли их устранить. Особенно хочу отметить оперативность и
+							профессионализм специалистов.
+						</div>
+						<div class="review-rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="review-service">
+							<i class="fas fa-tag"></i>
+							Внешний пентест
+						</div>
+					</div>
+
+					<div class="review-card" data-type="incomplete">
+						<div class="review-header">
+							<div class="review-author-info">
+								<div class="review-avatar">
+									<i class="fas fa-user"></i>
+								</div>
+								<div>
+									<div class="review-author">Мария С.</div>
+									<div class="review-date">10 января 2024</div>
+								</div>
+							</div>
+							<span class="review-type incomplete">В процессе</span>
+						</div>
+						<div class="review-text">
+							Заказала анализ кода, но пока не получила окончательный отчет. Специалисты вежливые,
+							отвечают на вопросы. Надеюсь на качественный результат.
+						</div>
+						<div class="review-rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</div>
+						<div class="review-service">
+							<i class="fas fa-tag"></i>
+							Анализ кода
+						</div>
+					</div>
+
+					<div class="review-card" data-type="completed">
+						<div class="review-header">
+							<div class="review-author-info">
+								<div class="review-avatar">
+									<i class="fas fa-user"></i>
+								</div>
+								<div>
+									<div class="review-author">Дмитрий П.</div>
+									<div class="review-date">5 января 2024</div>
+								</div>
+							</div>
+							<span class="review-type completed">Завершен</span>
+						</div>
+						<div class="review-text">
+							SoSI помогли нам подготовиться к аудиту безопасности. Все прошло успешно, рекомендую как
+							надежного партнера. Отдельное спасибо за подробный отчет и рекомендации.
+						</div>
+						<div class="review-rating">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+						<div class="review-service">
+							<i class="fas fa-tag"></i>
+							Аудит безопасности
+						</div>
+					</div>
+				</div>
+
+				<div class="add-review-section">
+					<h3>Оставить отзыв</h3>
+					<div class="add-review">
+						<div class="form-group">
+							<label>Ваша оценка</label>
+							<div class="rating-input">
+								<i class="far fa-star" data-rating="1"></i>
+								<i class="far fa-star" data-rating="2"></i>
+								<i class="far fa-star" data-rating="3"></i>
+								<i class="far fa-star" data-rating="4"></i>
+								<i class="far fa-star" data-rating="5"></i>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="review-service">Услуга</label>
+							<select id="review-service">
+								<option value="">Выберите услугу</option>
+								<option value="pentest">Внешний пентест</option>
+								<option value="internal-pentest">Внутренний пентест</option>
+								<option value="code-analysis">Анализ кода</option>
+								<option value="vulnerability-fix">Исправление уязвимостей</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="review-text">Ваш отзыв</label>
+							<textarea id="review-text" placeholder="Поделитесь вашим опытом работы с SoSI..."
+								rows="5"></textarea>
+						</div>
+						<button class="auth-button">Отправить отзыв</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
+
 </html>

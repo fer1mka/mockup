@@ -1,125 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход - SoSI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вход - SoSI</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Навигация -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
-                <span>SoSI</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="services.html" class="nav-link">Услуги</a></li>
-                <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
-                <li><a href="support.html" class="nav-link">Техподдержка</a></li>
-                <li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
-                <li><a href="login.html" class="nav-link active">Вход</a></li>
-                <li><a href="register.html" class="nav-link">Регистрация</a></li>
-            </ul>
-        </div>
-    </nav>
+	<!-- Навигация -->
+	<nav>
+		<div class="nav-container">
+			<div class="logo">
+				<i class="fas fa-shield-alt"></i>
+				<span>SoSI</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html" class="nav-link">Главная</a></li>
+				<li><a href="services.html" class="nav-link">Услуги</a></li>
+				<li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+				<li><a href="support.html" class="nav-link">Техподдержка</a></li>
+				<li><a href="executor-chat.html" class="nav-link">Чат с исполнителем</a></li>
+				<li><a href="login.html" class="nav-link active">Вход</a></li>
+				<li><a href="register.html" class="nav-link">Регистрация</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <!-- Страница входа -->
-    <div class="main-content">
-        <div class="page active">
-            <div class="auth-wrapper">
-                <div class="auth-container">
-                    <div class="auth-header">
-                        <h2 class="auth-title">Вход в систему</h2>
-                        <p class="auth-subtitle">Войдите в ваш аккаунт SoSI</p>
-                    </div>
-                    
-                    <form class="auth-form">
-                        <div class="form-group">
-                            <label for="login-email">Email</label>
-                            <input type="email" id="login-email" placeholder="Введите ваш email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="login-password">Пароль</label>
-                            <input type="password" id="login-password" placeholder="Введите ваш пароль" required>
-                            <div class="form-options">
-                                <label class="remember-me">
-                                    <input type="checkbox" id="remember-me">
-                                    Запомнить меня
-                                </label>
-                                <a href="#" class="forgot-password">Забыли пароль?</a>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="auth-button">
-                            <i class="fas fa-sign-in-alt"></i>
-                            Войти в систему
-                        </button>
-                    </form>
-                    
-                    <div class="auth-divider">
-                        <span>или</span>
-                    </div>
-                    
-                    <div class="social-auth">
-                        <button class="social-button google-button">
-                            <i class="fab fa-google"></i>
-                            Войти с Google
-                        </button>
-                        <button class="social-button github-button">
-                            <i class="fab fa-github"></i>
-                            Войти с GitHub
-                        </button>
-                    </div>
-                    
-                    <div class="auth-switch">
-                        Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
-                    </div>
-                </div>
-                
-                <div class="auth-sidebar">
-                    <div class="sidebar-content">
-                        <h3>Безопасный вход</h3>
-                        <ul class="benefits-list">
-                            <li>
-                                <i class="fas fa-shield-alt"></i>
-                                <div>
-                                    <strong>Защита данных</strong>
-                                    <span>Все соединения защищены шифрованием</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-history"></i>
-                                <div>
-                                    <strong>История сессий</strong>
-                                    <span>Отслеживайте активность вашего аккаунта</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-bell"></i>
-                                <div>
-                                    <strong>Уведомления</strong>
-                                    <span>Получайте оповещения о подозрительной активности</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-mobile-alt"></i>
-                                <div>
-                                    <strong>Двухфакторная аутентификация</strong>
-                                    <span>Дополнительная защита вашего аккаунта</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- Страница входа -->
+	<div class="main-content">
+		<div class="page active">
+			<div class="auth-wrapper">
+				<div class="auth-container">
+					<div class="auth-header">
+						<h2 class="auth-title">Вход в систему</h2>
+						<p class="auth-subtitle">Войдите в ваш аккаунт SoSI</p>
+					</div>
 
-    <script src="script.js"></script>
+					<form class="auth-form">
+						<div class="form-group">
+							<label for="login-email">Email</label>
+							<input type="email" id="login-email" placeholder="Введите ваш email" required>
+						</div>
+
+						<div class="form-group">
+							<label for="login-password">Пароль</label>
+							<input type="password" id="login-password" placeholder="Введите ваш пароль" required>
+							<div class="form-options">
+								<label class="remember-me">
+									<input type="checkbox" id="remember-me">
+									Запомнить меня
+								</label>
+								<a href="#" class="forgot-password">Забыли пароль?</a>
+							</div>
+						</div>
+
+						<button type="submit" class="auth-button">
+							<i class="fas fa-sign-in-alt"></i>
+							Войти в систему
+						</button>
+					</form>
+
+					<div class="auth-divider">
+						<span>или</span>
+					</div>
+
+					<div class="social-auth">
+						<button class="social-button google-button">
+							<i class="fab fa-google"></i>
+							Войти с Google
+						</button>
+						<button class="social-button github-button">
+							<i class="fab fa-github"></i>
+							Войти с GitHub
+						</button>
+					</div>
+
+					<div class="auth-switch">
+						Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
+					</div>
+				</div>
+
+				<div class="auth-sidebar">
+					<div class="sidebar-content">
+						<h3>Безопасный вход</h3>
+						<ul class="benefits-list">
+							<li>
+								<i class="fas fa-shield-alt"></i>
+								<div>
+									<strong>Защита данных</strong>
+									<span>Все соединения защищены шифрованием</span>
+								</div>
+							</li>
+							<li>
+								<i class="fas fa-history"></i>
+								<div>
+									<strong>История сессий</strong>
+									<span>Отслеживайте активность вашего аккаунта</span>
+								</div>
+							</li>
+							<li>
+								<i class="fas fa-bell"></i>
+								<div>
+									<strong>Уведомления</strong>
+									<span>Получайте оповещения о подозрительной активности</span>
+								</div>
+							</li>
+							<li>
+								<i class="fas fa-mobile-alt"></i>
+								<div>
+									<strong>Двухфакторная аутентификация</strong>
+									<span>Дополнительная защита вашего аккаунта</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
+
 </html>
